@@ -4,16 +4,17 @@
 
 body {
   width: 100%;
-  background-color: #b6c5d8;
+  /* background-image: url('../images/background.jpg'); */
+  /* background-color: #b6c5d8; */
 }
 
 .navs {
-  background-color: #c41a11;
-  border-bottom: 2px solid #ebc03c;
+  background-color: #b60017 !important;
+  border-bottom: 2px solid #f5bd02;
 }
 
 .navs a {
-  color: #ebc03c;
+  color: #f5bd02;
 }
 
 /* .headers {
@@ -30,9 +31,10 @@ body {
   overflow: hidden;
 } */
 
-/* .headers {
-  background-color: #a20900;
-} */
+.headers {
+  background-image: url('../images/background.jpg');
+  height: 120vh;
+}
 
 .headers .headercontent {
   padding: 10px 0px;
@@ -44,15 +46,60 @@ body {
   border-radius: 10px;
 }
 
+.headers i {
+  color: #ebc03c !important;
+}
+
+.marquee {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+
+.marquee-text {
+  white-space: nowrap;
+  color: #ebc03c;
+  font-weight: bold;
+  animation: marquee-scroll 10s linear infinite;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.carousel img {
+  border-radius: 30px;
+}
+
 .buttons {
   width: 150px;
   line-height: 60px;
   padding: 10px 8px;
   margin-bottom: 15px;
-  /* background: linear-gradient(90deg, #428387, #336876, #265166 100%); */
-  border: 1px solid #ebc03c;
+  background-image: url('https://i.pinimg.com/736x/c5/e3/0e/c5e30edc21544efa63a47b7b71bcf8be.jpg');
+  background-size: cover;
+  border: 2px solid #ebc03c;
   border-radius: 10px 10px;
   text-align: center;
+}
+
+.buttons a {
+  color: #ebc03c;
+  font-family: 'Rubik Mono One', monospace;
+  font-size: 2em;
 }
 
 .button {
@@ -73,6 +120,14 @@ body {
   background: linear-gradient(90deg, #428387, #336876, #265166 100%);
 }
 
+.custom-line {
+  border: none;
+  width: 100%;
+  height: 1px;
+  background-color: #ebc03c;
+}
+
+/* footer  */
 .footer {
   position: fixed;
   /* background-color: #c3131d; */
@@ -83,17 +138,19 @@ body {
 }
 
 .footers {
+  border-top: 2px solid #ebc03c;
   height: 100px;
-  background: #c41a11;
+  background: #b60017 !important;
 }
 
 .footers a,
 .footers i {
-  color: #ebc03c;
+  color: #f5bd02;
   font-size: 25px;
 }
 
 .footers span {
+  color: #f5bd02;
   font-size: 15px;
   margin-top: 10px;
 }
