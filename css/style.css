@@ -45,7 +45,11 @@ body {
 } */
 
 .headers {
-  background-image: url("../images/background.jpg");
+
+  background-image: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 
   /* height: 120vh; */
 }
@@ -234,8 +238,50 @@ body {
   color: transparent;
   -webkit-background-clip: text;
 }
-
 /* wallet */
+
+/* service */
+.service {
+  background: rgb(138, 20, 20);
+}
+.service .col-6 {
+  color: #fff;
+  padding: 10px 0px;
+}
+.click {
+  border-right: 1px solid #ebc03c;
+  border-bottom: 2px solid #ebc03c;
+}
+.click1 {
+  border-left: 1px solid #ebc03c;
+  border-bottom: 2px solid #ebc03c;
+}
+.first-block {
+  border: 2px solid #f5bd02;
+  border-radius: 10px;
+  background: #000;
+  color: #f5bd02;
+  padding: 10px;
+  text-align: center;
+}
+
+.second-card {
+  border: 2px solid #f5bd02;
+  border-radius: 10px;
+  padding: 10px;
+  background: #000;
+  color: #f5bd02;
+}
+.second-card a {
+  background: #fff;
+  color: purple;
+  font-size: 17px;
+  height: 40px;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+/* service */
 
 /* dashboard */
 .dashboard-lists p {
@@ -312,6 +358,56 @@ body {
   font-size: 15px;
   margin-top: 10px;
 }
+
+/*----------------- css styles for 3d -----------------  */
+
+/* start 3d history */
+/* Style the tab */
+.tab {
+  overflow: hidden;
+
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid #ccc;
+  background-color: #f1f1f1; */
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  /* background-color: inherit; */
+  background-color: transparent;
+  color: #fff;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  border-bottom: 1px solid #f5bd02;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  /* background-color: #ccc; */
+  border-bottom: 3px dashed #f5bd02;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  /* border: 1px solid #ccc; */
+  border-top: none;
+}
+/* end 3d history */
 
 .active {
   text-shadow: 0 0 5px #ffee10;
