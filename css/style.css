@@ -26,7 +26,7 @@ body {
   );
   color: transparent;
   -webkit-background-clip: text;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -310,4 +310,8 @@ body {
   font-weight: bold;
   font-size: 15px;
   margin-top: 10px;
+}
+
+.active {
+  text-shadow: 0 0 5px #ffee10;
 }
