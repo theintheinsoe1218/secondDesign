@@ -45,8 +45,7 @@ body {
 } */
 
 .headers {
-
-  background-image: url('../images/background.jpg');
+  background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -366,7 +365,6 @@ body {
 .tab {
   overflow: hidden;
 
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -386,7 +384,6 @@ body {
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 17px;
-
 }
 
 /* Change background color of buttons on hover */
@@ -446,15 +443,7 @@ body {
 /* invite code */
 .pw-btn {
   width: 100%;
-  height: 40px;
-  background-image: linear-gradient(
-    to right,
-    #462523 0,
-    #cb9b51 22%,
-    #f6e27a 45%,
-    #f6f2c0 50%,
-    #f6e27a 55%,
-    #cb9b51 78%,
-    #462523 100%
-  );
+  height: 50px;
+  background-color: #f5bd02;
+  border-radius: 10px;
 }
