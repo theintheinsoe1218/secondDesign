@@ -26,7 +26,7 @@ body {
   );
   color: transparent;
   -webkit-background-clip: text;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -45,10 +45,12 @@ body {
 } */
 
 .headers {
+
   background-image: url('../images/background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+
   /* height: 120vh; */
 }
 
@@ -105,7 +107,7 @@ body {
   line-height: 60px;
   padding: 10px 8px;
   margin-bottom: 15px;
-  background-image: url('https://i.pinimg.com/736x/c5/e3/0e/c5e30edc21544efa63a47b7b71bcf8be.jpg');
+  background-image: url("https://i.pinimg.com/736x/c5/e3/0e/c5e30edc21544efa63a47b7b71bcf8be.jpg");
   background-size: cover;
   border: 2px solid #ebc03c;
   border-radius: 10px 10px;
@@ -113,8 +115,19 @@ body {
 }
 
 .buttons a {
-  color: #ebc03c;
-  font-family: 'Rubik Mono One', monospace;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  font-family: "Rubik Mono One", monospace;
   font-size: 2em;
 }
 
@@ -143,6 +156,131 @@ body {
   background-color: #ebc03c;
 }
 /* index */
+
+/* wallet */
+.wallet-one {
+  border: 1px solid #ffee10;
+  border-radius: 25px;
+  width: 100px;
+  margin: 5px;
+  text-align: center;
+  padding-top: 8px;
+  padding-left: 17px;
+  padding-right: 15px;
+}
+
+.wallet-two {
+  border: 1px solid #ffee10;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  width: 100px;
+  margin: 5px;
+  text-align: center;
+  padding-top: 8px;
+  padding-left: 17px;
+  padding-right: 15px;
+}
+.wallet-three {
+  border: 1px solid #ffee10;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: 100px;
+  margin: 5px;
+  text-align: center;
+  padding-top: 8px;
+  padding-left: 17px;
+  padding-right: 15px;
+}
+.wallet-pill {
+  width: 100%;
+  border-radius: 30px;
+  background: #000;
+}
+.wallet-pill a {
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  text-decoration: none;
+}
+
+.wallet-pill:hover {
+  box-shadow: 0 0 20px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
+}
+.wallet-service {
+  background: #000;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 0px;
+}
+.wallet-service p {
+  text-shadow: 0 0 3px #ffee10;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+}
+/* wallet */
+
+/* service */
+.service {
+  background: rgb(138, 20, 20);
+}
+.service .col-6 {
+  color: #fff;
+  padding: 10px 0px;
+}
+.click {
+  border-right: 1px solid #ebc03c;
+  border-bottom: 2px solid #ebc03c;
+}
+.click1 {
+  border-left: 1px solid #ebc03c;
+  border-bottom: 2px solid #ebc03c;
+}
+.first-block {
+  border: 2px solid #f5bd02;
+  border-radius: 10px;
+  background: #000;
+  color: #f5bd02;
+  padding: 10px;
+  text-align: center;
+}
+
+.second-card {
+  border: 2px solid #f5bd02;
+  border-radius: 10px;
+  padding: 10px;
+  background: #000;
+  color: #f5bd02;
+}
+.second-card a {
+  background: #fff;
+  color: purple;
+  font-size: 17px;
+  height: 40px;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+/* service */
 
 /* dashboard */
 .dashboard-lists p {
@@ -269,3 +407,37 @@ body {
   border-top: none;
 }
 /* end 3d history */
+
+.active {
+  text-shadow: 0 0 5px #ffee10;
+}
+
+.card a {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.results {
+  text-align: center;
+  color: #2a576c;
+}
+
+.results h1 {
+  font-size: 100px;
+  color: #f5bd02;
+}
+
+.results p span,
+.results p {
+  font-size: 18px;
+  color: #f5bd02;
+}
+
+.results .btns {
+  background-color: #c50408;
+  color: #ffffff;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 2px solid #ebc03c;
+}
