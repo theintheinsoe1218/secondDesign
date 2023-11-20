@@ -9,12 +9,25 @@ body {
 }
 
 .navs {
-  background-color: #b60017 !important;
+  background-color: #000 !important;
   border-bottom: 2px solid #f5bd02;
 }
 
 .navs a {
-  color: #f5bd02;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 /* .headers {
@@ -165,17 +178,41 @@ body {
 .footers {
   border-top: 2px solid #ebc03c;
   height: 100px;
-  background: #b60017 !important;
+  background: #000 !important;
 }
 
 .footers a,
 .footers i {
-  color: #f5bd02;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
   font-size: 25px;
 }
 
 .footers span {
-  color: #f5bd02;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
   font-size: 15px;
   margin-top: 10px;
 }
