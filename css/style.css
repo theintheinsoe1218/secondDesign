@@ -233,8 +233,50 @@ body {
   color: transparent;
   -webkit-background-clip: text;
 }
-
 /* wallet */
+
+/* service */
+.service {
+  background: rgb(138, 20, 20);
+}
+.service .col-6 {
+  color: #fff;
+  padding: 10px 0px;
+}
+.click {
+  border-right: 1px solid #ebc03c;
+  border-bottom: 2px solid #ebc03c;
+}
+.click1 {
+  border-left: 1px solid #ebc03c;
+  border-bottom: 2px solid #ebc03c;
+}
+.first-block {
+  border: 2px solid #f5bd02;
+  border-radius: 10px;
+  background: #000;
+  color: #f5bd02;
+  padding: 10px;
+  text-align: center;
+}
+
+.second-card {
+  border: 2px solid #f5bd02;
+  border-radius: 10px;
+  padding: 10px;
+  background: #000;
+  color: #f5bd02;
+}
+.second-card a {
+  background: #fff;
+  color: purple;
+  font-size: 17px;
+  height: 40px;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+/* service */
 
 /* dashboard */
 .dashboard-lists p {
