@@ -45,7 +45,7 @@ body {
 } */
 
 .headers {
-  background-image: url('../images/background.jpg');
+  background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -106,7 +106,7 @@ body {
   line-height: 60px;
   padding: 10px 8px;
   margin-bottom: 15px;
-  background-image: url('https://i.pinimg.com/736x/c5/e3/0e/c5e30edc21544efa63a47b7b71bcf8be.jpg');
+  background-image: url("https://i.pinimg.com/736x/c5/e3/0e/c5e30edc21544efa63a47b7b71bcf8be.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border: 2px solid #ebc03c;
@@ -127,7 +127,7 @@ body {
   );
   color: transparent;
   -webkit-background-clip: text;
-  font-family: 'Rubik Mono One', monospace;
+  font-family: "Rubik Mono One", monospace;
   font-size: 2em;
 }
 
@@ -511,4 +511,100 @@ hr {
   height: 50px;
   background-color: #f5bd02;
   border-radius: 10px;
+}
+
+.btns {
+  background-color: #c50408;
+  color: #ffffff;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 2px solid #ebc03c;
+}
+
+.modal .modal-btn a {
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  background-color: #c50408;
+  border-radius: 10px;
+  padding: 8px;
+  border: 2px solid #ebc03c;
+}
+
+.flesh-card {
+  /* height: 100px; */
+  /* padding-top: 10px; */
+  border-radius: 10px 10px;
+}
+
+.flesh-card span {
+  font-size: 40px;
+  color: #f5bd02;
+}
+
+.flesh-card p {
+  color: #f5bd02;
+  font-size: 18px;
+}
+
+.custom-btn button {
+  background-color: #c50408;
+  color: #ffffff;
+  padding: 8px 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #ebc03c;
+}
+
+.custom-btn h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #f5bd02;
+}
+
+.custom-btn span {
+  color: #f5bd02;
+  font-size: 18px;
+}
+
+.custom-btn icons {
+  font-size: 22px;
+}
+
+.custom-btn select {
+  background-color: #c50408;
+  color: #ffffff;
+  padding: 8px 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid #ebc03c;
+}
+
+.box-container {
+  width: 100%;
+  /* max-width: 500px; */
+  height: 300px;
+  overflow: auto;
+}
+
+.box-container .box {
+  background-color: #c50408;
+  color: #f5bd02;
+  width: 80px;
+  height: 60px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid #ebc03c;
+  font-weight: bold;
+}
+
+.box-container .progress-bar {
+  width: 100%;
+  height: 20%;
+  background-color: green;
+  border-radius: 0.25rem;
 }

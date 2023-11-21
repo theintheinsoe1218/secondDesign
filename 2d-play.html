@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2D Morning Play</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Inter&family=Poppins:wght@300;400;500&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+    <!-- Material Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/material-icons@1.13.12/iconfont/material-icons.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+       <!-- nav section -->
+        <div class="row">
+            <div class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 navs fixed-top">
+            <div class="px-1 py-2" style="height: 60px;">
+                <div class="d-flex justify-content-between mt-2">
+
+                    <h5 class="d-inline-block">
+                        <a href="../index.html" class="text-decoration-none"
+                        >Diamond 2D | 3D</a
+                        >
+                    </h5>
+                    <span>
+                        <a class="material-icons text-decoration-none" href="index.html"
+                          >refresh</a
+                        >
+                    </span>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+        <!-- nav section -->
+
+        <!-- content section -->
+        <div class="row">
+            <div
+              class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 mt-4 py-4 headers"
+              style="height: 200vh;"    
+            >
+            <div class="flesh-card mt-4">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between">
+                        <span class="material-icons">account_balance_wallet</span>
+                        <p class="px-2">လက်ကျန်ငွေ</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span class="material-icons">
+                          update
+                          </span>
+                        <p class="px-2">ပိတ်ရန်ကျန်ချိန်</p>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between">
+
+                    <p class="ms-5">0.00</p>
+                    <p class="me-2">2023-11-16 <br/> 02:30:00PM</p>
+                </div>
+                
+            </div>
+
+            <div>
+              <div class="d-flex justify-content-between custom-btn">
+                <a href="dream-book.html" class="btn h-50 text-white p-2" style="background-color: #c50408; border: 2px solid #ebc03c;"><span class="material-icons text-white icons">menu_book</span>  အိမ်မက်</a>
+                <div class=""><h1 style="color: #f5bd02;">2D</h1></div>
+                <select class="h-50 text-white">
+                  <option value="1">12:00 AM</option>
+                  <option value="2">04:00 PM</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between mt-3 custom-btn">
+              <button class="fs-6 px-3">ပတ်လည်</button>
+              <input type="text" name="amount" id="amount" placeholder="ငွေပမာဏ" class="form-control w-50 text-center border-black"/>
+            </div>
+            
+
+            <div class="d-flex justify-content-between mt-3 custom-btn">
+              <a class="btn mt-3" data-bs-toggle="modal" data-bs-target="#colorModal" style="color: #f5bd02"><span class="material-icons">
+                question_mark
+                </span>အရောင်ရှင်းလင်းချက်</a>
+              <button class="fs-6">အမြန်ရွေးရန်</button>
+            </div>
+
+            
+
+            <div class="box-container mt-5" id="boxContainer">
+              <div class="d-flex justify-content-around">
+                <div class="box btn">
+                  00
+                  <div class="progress-bar mt-2"></div>
+                </div>
+  
+                <div class="box btn">
+                  01
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box btn">
+                  02
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box btn">
+                  03
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box btn">
+                  04
+                  <div class="progress-bar mt-2"></div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-around">
+                <div class="box btn">
+                  00
+                  <div class="progress-bar mt-2"></div>
+                </div>
+  
+                <div class="box btn">
+                  01
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box btn">
+                  02
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box btn">
+                  03
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box btn">
+                  04
+                  <div class="progress-bar mt-2"></div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-around">
+                <div class="box btn">
+                  00
+                  <div class="progress-bar mt-2"></div>
+                </div>
+  
+                <div class="box">
+                  01
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  02
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  03
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  04
+                  <div class="progress-bar mt-2"></div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-around">
+                <div class="box">
+                  00
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  01
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  02
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  03
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  04
+                  <div class="progress-bar mt-2"></div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-around">
+                <div class="box">
+                  00
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  01
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  02
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  03
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  04
+                  <div class="progress-bar mt-2"></div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-around">
+                <div class="box">
+                  00
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  01
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  02
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  03
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  04
+                  <div class="progress-bar mt-2"></div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-around">
+                <div class="box">
+                  00
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  01
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  02
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  03
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  04
+                  <div class="progress-bar mt-2"></div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-around">
+                <div class="box">
+                  00
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  01
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  02
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  03
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  04
+                  <div class="progress-bar mt-2"></div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-around">
+                <div class="box">
+                  00
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  01
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  02
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  03
+                  <div class="progress-bar mt-2"></div>
+                </div>
+                <div class="box">
+                  04
+                  <div class="progress-bar mt-2"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dream-form mt-3">
+              <div class="row">
+                 <div class="col-md-12">
+                  
+                  
+                 </div>
+              </div>
+              <div class="card mt-3">
+                  <div class="card-header">
+                      <h5 class="mb-0">အရောင်ရှင်းလင်းချက်</h5>
+                  </div>
+                  <div class="card-body ms-3">
+                        <div class="row">
+                            <div class="col-4 " >
+                                <button id="one_amount" class="btn btn-outline-primary" style="width: 100px;">150MMK</button>
+                            </div>
+                            <div class="col-4">
+                                <button id="two_amount" class="btn btn-outline-secondary" style="width: 100px;">200MMK</button>
+                            </div>
+                            <div class="col-4">
+                                <button id="three_amount" class="btn btn-outline-success" style="width: 100px;">250MMK</button>
+                            </div>
+                    
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-4">
+                                <button id="four_amount" class="btn btn-outline-danger" style="width: 100px;">300MMK</button>
+                            </div>
+                            <div class="col-4">
+                            <button id="six_amount" class="btn btn-outline-warning" style="width: 100px;">350MMK</button>
+                            </div>
+                        <div class="col-4">
+                        <button id="seven_amount" class="btn btn-outline-info" style="width: 100px;">500MMK</button>
+                        </div>
+                        
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-4">
+                                <button id="eight_amount" class="btn btn-outline-dark" style="width: 100px;">1000MMK</button>
+                            </div>
+                            <div class="col-4">
+                                <button id="nine_amount" class="btn btn-outline-primary" style="width: 100px;">1500MMK</button>
+                            </div>
+                        <div class="col-4">
+                        <button id="ten_amount" class="btn btn-outline-secondary" style="width: 100px;">2000MMK</button>
+                        </div>
+                        
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-4">
+                                <button id="eleven_amount" class="btn btn-outline-success" style="width: 100px;">2500MMK</button>
+                            </div>
+                            <div class="col-4">
+                                <button id="twele_amount" class="btn btn-outline-danger" style="width: 100px;">3000MMK</button>
+                            </div>
+                            <div class="col-4">
+                                <button id="theen_amount" class="btn btn-outline-warning" style="width: 100px;">5000MMK</button>
+                            </div>
+                        </div>
+          
+                      <form action="#" method="post" class="p-4">
+                          <input type="text" id="outputField" name="selected_digits" class="form-control" placeholder="Selected digits">
+                      
+                          <div id="amuntInputs" class="col-md-12 mb-3"></div>
+              
+                          <div class="col-md-12 mb-3">
+                              <label for="totalAmount">Total Amount</label>
+                              <input type="text" id="totalAmount" name="totalAmount" class="form-control" readonly="">
+                          </div>
+          
+                          <input type="hidden" name="user_id" value="6">
+                      
+                          <div class="col-12 d-flex justify-content-center mt-3">
+                              <button type="submit" class="btn btn-danger me-2">Cancel</button>
+                              <button type="submit" class="btn btn-success">Submit</button>
+                          </div>
+                      </form>
+          
+                  </div>
+              </div>
+            </div>
+                             
+                
+            </div>
+        </div>
+        <!-- content section -->
+
+        <!-- footer section -->
+        <div class="row footer">
+            <div class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 py-3 footers">
+              <div class="d-flex justify-content-around">
+                <div class="text-center">
+                  <a href="index.html" class="text-decoration-none active">
+                    <i class="fas fa-house-chimney"></i>
+                    <span class="d-block">ပင်မ</span>
+                  </a>
+                </div>
+                <div class="text-center">
+                  <a href="wallet.html" class="text-decoration-none">
+                    <i class="fas fa-wallet"></i>
+                    <span class="d-block">ပိုက်ဆံအိတ်</span>
+                  </a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-decoration-none">
+                    <i class="fas fa-gift"></i>
+                    <span class="d-block">ပရိုမိုရှင်း</span>
+                  </a>
+                </div>
+                <div class="text-center">
+                  <a href="service.html" class="text-decoration-none">
+                    <i class="fas fa-phone"></i>
+                    <span class="d-block">ဝန်ဆောင်မှုဖုန်း</span>
+                  </a>
+                </div>
+                <div class="text-center">
+                  <a
+                    href="dashboard.html"
+                    class="text-decoration-none"
+                  >
+                    <i class="fas fa-user"></i>
+                    <span class="d-block">ကျွန်ုပ်</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- footer section -->
+
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: #f5bd02;">ထိုးမည့်အချိန် (section) ကိုရွေးပါ</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-btn">
+              <a href="./2d-play.html" class="text-decoration-none btn">12:00 AM</a>
+            </div>
+            <div class="modal-btn mt-2">
+              <a href="#" class="text-decoration-none btn">04:00 PM</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btns modal-button">ထိုးမည်</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</html>
