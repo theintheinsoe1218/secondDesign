@@ -503,6 +503,24 @@ hr {
   border-top: none;
 }
 /* end 3d history */
+.table {
+  border-collapse: separate;
+  border-spacing: 3px; /* Remove the space between cells */
+}
+
+.table th,
+.table td {
+  color: #fff;
+  background-image: url('../images/background.jpg');
+  padding: 16px; /* Adjust the padding to change the space between columns and rows */
+  border: 1px solid red; /* Set the border to transparent */
+}
+
+.table tr>td, .table tr>td>a{
+  color: white;
+}
+
+/*-----------------  end css styles for 3d -----------------  */
 
 .active {
   text-shadow: 0 0 5px #ffee10;
