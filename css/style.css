@@ -45,7 +45,7 @@ body {
 } */
 
 .headers {
-  background-image: url("../images/background.jpg");
+  background-image: url('../images/background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -106,7 +106,7 @@ body {
   line-height: 60px;
   padding: 10px 8px;
   margin-bottom: 15px;
-  background-image: url("https://i.pinimg.com/736x/c5/e3/0e/c5e30edc21544efa63a47b7b71bcf8be.jpg");
+  background-image: url('https://i.pinimg.com/736x/c5/e3/0e/c5e30edc21544efa63a47b7b71bcf8be.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   border: 2px solid #ebc03c;
@@ -127,7 +127,7 @@ body {
   );
   color: transparent;
   -webkit-background-clip: text;
-  font-family: "Rubik Mono One", monospace;
+  font-family: 'Rubik Mono One', monospace;
   font-size: 2em;
 }
 
@@ -238,6 +238,71 @@ body {
   -webkit-background-clip: text;
 }
 /* wallet */
+
+/* top-up */
+.banks-section {
+  background: #000;
+  border: 2px solid #ffee10;
+  border-radius: 10px;
+  padding: 10px;
+}
+.bank a {
+  text-decoration: none;
+  color: #f5bd02 !important;
+}
+.bank p {
+  color: #f5bd02;
+}
+.bank img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+}
+hr {
+  height: 2px;
+  background: #f5bd02;
+}
+
+.fill-money {
+  background: var(--bg-color);
+  color: #fff;
+  height: 100vh;
+}
+.fill-money input {
+  border: 2px solid #f5bd02;
+}
+.fill-money img {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+}
+.fill-box {
+  border: 2px solid #f5bd02;
+  background: #000;
+  color: #f5bd02;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.back-btn {
+  background: grey !important;
+  width: 100%;
+  border: 2px solid #f5bd02 !important;
+  border-radius: 10px;
+  color: #000 !important;
+}
+.top-up-btn {
+  background: #000 !important;
+  width: 100%;
+  border: 2px solid #f5bd02 !important;
+  border-radius: 10px;
+  color: #f5bd02 !important;
+}
+/* top-up */
 
 /* service */
 .service {
