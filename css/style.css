@@ -425,6 +425,39 @@ hr {
 
 /*----------------- css styles for 3d -----------------  */
 
+/* 3d bet */
+.toggled {
+  background-color: #ffee10 !important; /* Change this to the color you want */
+}
+
+/* "R" toggle button */
+/* Styles for the button */
+.toggle-btn {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* Styles for the active state */
+.toggle-btn.active {
+  background-color: #ffee10; 
+  color: #000;
+  font-weight: 800;
+}
+
+
+/* display button  */
+.outputButton {
+  margin: 5px;
+  padding: 5px;
+  background-color: #428387;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
 /* start 3d history */
 /* Style the tab */
 .tab {
