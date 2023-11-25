@@ -241,10 +241,12 @@ body {
 
 /* top-up */
 .banks-section {
-  background: #000;
+  background: #c50408;
   border: 2px solid #ffee10;
   border-radius: 10px;
   padding: 10px;
+  box-shadow: 3px 5px 5px 0 rgba(0, 0, 0, 0.2),
+    3px 5px 5px 0 rgba(0, 0, 0, 0.19);
 }
 .bank a {
   text-decoration: none;
@@ -278,7 +280,7 @@ hr {
 }
 .fill-box {
   border: 2px solid #f5bd02;
-  background: #000;
+  background: #c50408;
   color: #f5bd02;
   border-radius: 5px;
   width: 100px;
@@ -287,6 +289,8 @@ hr {
   margin: 5px;
   text-align: center;
   cursor: pointer;
+  box-shadow: 3px 5px 5px 0 rgba(0, 0, 0, 0.2),
+    3px 5px 5px 0 rgba(0, 0, 0, 0.19);
 }
 .back-btn {
   background: grey !important;
@@ -296,11 +300,13 @@ hr {
   color: #000 !important;
 }
 .top-up-btn {
-  background: #000 !important;
+  background: #c50408 !important;
   width: 100%;
   border: 2px solid #f5bd02 !important;
   border-radius: 10px;
   color: #f5bd02 !important;
+  box-shadow: 3px 5px 5px 0 rgba(0, 0, 0, 0.2),
+    3px 5px 5px 0 rgba(0, 0, 0, 0.19);
 }
 /* top-up */
 
@@ -353,23 +359,30 @@ hr {
   font-size: 16px;
 }
 .list-card {
+  background-color: #c50408;
   border: 1px solid #f5bd02;
   border-radius: 10px;
   text-align: center;
   padding: 6px;
   padding-top: 15px;
   margin: 7px;
+  box-shadow: 3px 2px 4px #f5bd02;
+  transition: all 0.5s;
 }
-.list-card:hover::before {
+
+.list-card:active {
+  transform: translateY(4px);
+}
+/* .list-card:hover::before {
   transform: scale(9);
   box-shadow: 0 0 15px #ffee10;
-}
-.list-card:hover {
+} */
+/* .list-card:hover {
   border: 2px solid #000;
   color: #ffee10;
   box-shadow: 0 0 5px #ffee10;
   text-shadow: 0 0 5px #ffee10;
-}
+} */
 
 /* footer  */
 .footer {
@@ -441,11 +454,10 @@ hr {
 
 /* Styles for the active state */
 .toggle-btn.active {
-  background-color: #ffee10; 
+  background-color: #ffee10;
   color: #000;
   font-weight: 800;
 }
-
 
 /* display button  */
 .outputButton {
@@ -511,12 +523,13 @@ hr {
 .table th,
 .table td {
   color: #fff;
-  background-image: url('../images/background.jpg');
+  background-image: url("../images/background.jpg");
   padding: 16px; /* Adjust the padding to change the space between columns and rows */
   border: 1px solid red; /* Set the border to transparent */
 }
 
-.table tr>td, .table tr>td>a{
+.table tr > td,
+.table tr > td > a {
   color: white;
 }
 
@@ -554,6 +567,12 @@ hr {
   padding: 10px 15px;
   border-radius: 10px;
   border: 2px solid #ebc03c;
+  box-shadow: 3px 2px 4px #f5bd02;
+  transition: all 0.5s;
+}
+
+.results .btns:active {
+  transform: translateY(4px);
 }
 
 /* invite code */
@@ -581,6 +600,12 @@ hr {
   border-radius: 10px;
   padding: 8px;
   border: 2px solid #ebc03c;
+  box-shadow: 2px 1px 2px #f5bd02;
+  transition: all 0.5s;
+}
+
+.modal .modal-btn a:active {
+  transform: translateY(4px);
 }
 
 .flesh-card {
@@ -606,6 +631,8 @@ hr {
   font-size: 16px;
   border-radius: 8px;
   border: 2px solid #ebc03c;
+  box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, 0.2),
+    3px 5px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .custom-btn h1 {
@@ -626,7 +653,7 @@ hr {
 .custom-btn select {
   background-color: #c50408;
   color: #ffffff;
-  padding: 8px 10px;
+  padding: 8px 6px;
   font-size: 16px;
   border-radius: 8px;
   text-align: center;
@@ -651,11 +678,35 @@ hr {
   text-align: center;
   border: 2px solid #ebc03c;
   font-weight: bold;
+  box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, 0.2),
+    3px 5px 10px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
-.box-container .progress-bar {
+.box-container .special {
+  background-color: #f5bd02;
+  /* border: 2px solid #c50408; */
+
+  color: #ffffff;
+}
+
+.top-up-card {
+  background-color: #c50408;
+  border: 1px solid #ebc03c;
+  border-radius: 10px !important;
+  box-shadow: 3px 5px 5px 0 rgba(0, 0, 0, 0.2),
+    3px 5px 5px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 5px;
+  /* padding-left: 5px; */
+  width: 100%;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+/* .box-container .progress-bar {
   width: 100%;
   height: 20%;
   background-color: green;
   border-radius: 0.25rem;
-}
+} */
