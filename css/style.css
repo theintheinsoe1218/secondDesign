@@ -339,8 +339,10 @@ hr {
   border: 2px solid #f5bd02;
   border-radius: 10px;
   padding: 10px;
-  background: #000;
+  background: #c50408;
   color: #f5bd02;
+  box-shadow: 3px 5px 5px 0 rgba(0, 0, 0, 0.2),
+    3px 5px 5px 0 rgba(0, 0, 0, 0.19);
 }
 .second-card a {
   background: #fff;
@@ -515,21 +517,21 @@ hr {
   border-top: none;
 }
 /* end 3d history */
-.table {
+.tables {
   border-collapse: separate;
   border-spacing: 3px; /* Remove the space between cells */
 }
 
-.table th,
-.table td {
+.tables th,
+.tables td {
   color: #fff;
   background-image: url("../images/background.jpg");
   padding: 16px; /* Adjust the padding to change the space between columns and rows */
   border: 1px solid red; /* Set the border to transparent */
 }
 
-.table tr > td,
-.table tr > td > a {
+.tables tr > td,
+.tables tr > td > a {
   color: white;
 }
 
@@ -710,3 +712,41 @@ hr {
   background-color: green;
   border-radius: 0.25rem;
 } */
+
+.winner-card {
+  background-color: #c50408;
+  color: #f5bd02;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #ebc03c;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.submitbtns {
+  position: fixed;
+  bottom: -20px;
+  padding: 50px 0;
+  left: 0;
+}
+
+.remove-btn {
+  outline: 1px solid #eb1b1b;
+  background: #9c0606 !important;
+  color: #fff !important;
+  width: 100%;
+}
+.play-btn {
+  outline: 2px solid #fff;
+  color: #fff !important;
+  width: 100%;
+}
+
+.banks {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
+.banks img {
+  border-radius: 5px;
+}
